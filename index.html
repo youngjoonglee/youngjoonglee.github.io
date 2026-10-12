@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Young Lee</title>
+  <meta name="description" content="Young Lee (Young Joong Lee) — Ph.D. student in EECS and CSAIL at MIT, Perceptual Engineering Lab.">
+  <script>
+    /* Apply the saved light/dark choice before the page paints */
+    (function () { try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="brand" href="index.html">Young Lee</a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#pub">Publications</a></li>
+        <li><a href="experience.html">Experience</a></li>
+      </ul>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark mode">Dark</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ================= INTRO ================= -->
+  <section id="about" class="intro">
+    <div class="profile">
+      <!-- Put your photo at images/headshot.jpg -->
+      <img src="images/headshot.jpg" alt="Young Lee headshot">
+      <p class="email">Email: <a href="mailto:youngyjl@mit.edu">youngyjl@mit.edu</a></p>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/youngyjl" target="_blank" rel="noopener">LinkedIn</a><span>|</span><a href="https://scholar.google.com/citations?user=k8sj7VAAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><span>|</span><a href="https://orcid.org/0000-0002-2096-2261" target="_blank" rel="noopener">ORCID</a>
+      </p>
+    </div>
+
+    <div class="bio">
+      <h1>Young Lee <span class="alt-name">(Young Joong Lee)</span></h1>
+      <!-- <p class="subtitle">Ph.D. Student, MIT EECS &amp; CSAIL</p> -->
+
+      <p>
+        I am a Ph.D. student in EECS and CSAIL at MIT, advised by
+        <a href="https://jasbrooks.com/" target="_blank" rel="noopener">Prof. Jas Brooks</a> in the
+        <a href="https://mit-pel.com" target="_blank" rel="noopener">Perceptual Engineering Lab</a>.
+        Previously at MIT, I worked with
+        <a href="https://cdfg.csail.mit.edu/" target="_blank" rel="noopener">Prof. Wojciech Matusik</a> and
+        <a href="https://www.l4te.org/" target="_blank" rel="noopener">Prof. Giovanni Traverso</a>,
+        and completed my S.M. in EECS in 2025. I received my B.S. in Mechanical Engineering from Northwestern
+        University in 2022, where I worked with
+        <a href="https://rogersgroup.northwestern.edu/" target="_blank" rel="noopener">Prof. John A. Rogers</a> and
+        <a href="https://jeonggroup.ucdavis.edu/" target="_blank" rel="noopener">Prof. Hyoyoung Jeong</a>.
+      </p>
+
+      <p>
+        My research explores how machines can perceive the world in ways that are meaningful to people.
+        Working across sensing systems, embodied AI, and human-robot interaction, I build multimodal sensing
+        systems whose interpretation, reasoning, and actions are grounded in human perception. I am currently
+        focused on <strong>smell</strong>, with the goal of bringing olfaction into machine perception
+        alongside vision, language, and touch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= NEWS ================= -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news-list">
+      <li><span class="date">[Feb 2025]</span><span>I received my S.M. in EECS at MIT!</span></li>
+      <li><span class="date">[Jul 2024]</span><span>Review paper on
+        <a href="https://doi.org/10.1146/annurev-bioeng-103122-032652" target="_blank" rel="noopener">"Electronic Skin and ML"</a>
+        was published in <em>Annual Review of Biomedical Engineering</em>.</span></li>
+      <li><span class="date">[May 2024]</span><span>I presented
+        <a href="https://doi.org/10.1109/ICRA57147.2024.10610518" target="_blank" rel="noopener">"Liquids Identification and Manipulation via Digitally Fabricated Impedance Sensors"</a>
+        at <em>ICRA 2024</em>.</span></li>
+      <li><span class="date">[Jan 2024]</span><span>Paper on
+        <a href="https://doi.org/10.1109/ICRA57147.2024.10610518" target="_blank" rel="noopener">"Liquid Sensing for Robots with Impedance Sensors"</a>
+        was accepted to <em>ICRA 2024</em>.</span></li>
+      <li><span class="date">[Jan 2024]</span><span>Paper on
+          <a href="https://doi.org/10.1038/s41467-024-45059-8" target="_blank" rel="noopener">"Adaptive Tactile Transfer Glove"</a>
+          was published in <em>Nature Communications</em>.</span></li>
+    </ul>
+
+    <details class="more-news">
+      <summary>Previous news</summary>
+      <ul class="news-list">
+        <li><span class="date">[Feb 2023]</span><span>My previous work on
+          <a href="https://doi.org/10.1073/pnas.2219394120" target="_blank" rel="noopener">"Mechanoacoustic Sensing for Vocal Fatigue Monitoring"</a>
+          from Northwestern was featured on
+          <a href="https://x.com/MIT_CSAIL/status/1628443216273092608?s=20" target="_blank" rel="noopener">MIT CSAIL's X</a>.</span></li>
+        <li><span class="date">[Sep 2022]</span><span>I started my Ph.D. in EECS at MIT!</span></li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- ================= PUBLICATIONS ================= -->
+  <section id="pub">
+    <h2>Publications</h2>
+
+    <div class="pub-tabs" role="tablist">
+      <button type="button" data-group="all">All</button>
+      <button type="button" data-group="selected">Selected Publications</button>
+      <button type="button" data-group="other">Other Publications</button>
+      <button type="button" data-group="arxiv">arXiv · Posters · Abstracts</button>
+    </div>
+    <p class="pub-sort">Show by:
+      <button type="button" data-sort="date">date</button> /
+      <button type="button" data-sort="topic">topic</button>
+    </p>
+    <p class="note pub-note">* Equal contribution</p>
+
+    <div id="pub-view"></div>
+
+    <!-- All publications live here.
+         data-group: selected | other | arxiv
+         data-topic: robotics | wearable | materials
+         data-year: publication year (keep entries newest first) -->
+    <ol class="pubs" id="pub-data">
+      <li data-group="arxiv" data-year="2025" data-topic="robotics">
+        <!-- <div class="pub-thumb"><img src="images/pubs/flex-glove.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://arxiv.org/abs/2503.06349" target="_blank" rel="noopener">Fits like a Flex-Glove: Automatic Design of Personalized FPCB-Based Tactile Sensing Gloves</a>
+        <span class="pub-authors">D. Murphy, Y. Li, C. Owens, L. Stanton, <span class="me">Y. J. Lee</span>, P. P. Liang, Y. Luo, A. Torralba, W. Matusik</span>
+        <span class="pub-venue"><em>arXiv preprint</em> arXiv:2503.06349, 2025</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2024" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/fatigue-network.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1093/pnasnexus/pgae421" target="_blank" rel="noopener">Wearable network for multilevel physical fatigue prediction in manufacturing workers</a>
+        <span class="pub-authors">P. Mohapatra*, V. Aravind*, M. Bisram, <span class="me">Y. J. Lee</span>, H. Jeong, K. Jinkins, R. Gardner, J. Streamer, B. Bowers, L. Cavuoto, A. Banks, S. Xu, J. Rogers, J. Cao, Q. Zhu, P. Guo</span>
+        <span class="pub-venue"><em>PNAS Nexus</em> 3, pgae421, 2024</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2024" data-topic="robotics">
+        <!-- <div class="pub-thumb"><img src="images/pubs/eskin-ml-review.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1146/annurev-bioeng-103122-032652" target="_blank" rel="noopener">Electronic Skin: Opportunities and Challenges in Convergence with Machine Learning</a>
+        <span class="pub-authors">J. H. Koo*, <span class="me">Y. J. Lee</span>*, H. J. Kim*, W. Matusik, D.-H. Kim, H. Jeong</span>
+        <span class="pub-venue"><em>Annual Review of Biomedical Engineering</em> 26, 331–355, 2024</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2024" data-topic="robotics">
+        <!-- <div class="pub-thumb"><img src="images/pubs/thermo-haptic-vr.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1073/pnas.2404007121" target="_blank" rel="noopener">A wirelessly programmable, skin-integrated thermo-haptic stimulator system for virtual reality</a>
+        <span class="pub-authors">J.-H. Kim*, A. Vasquez-Guardado*, H. Luan*, J.-T. Kim*, D. S. Yang, H. Zhang, J.-K. Chang, S. Yoo, C. Park, Y. Wei, Z. Christiansen, S. Kim, R. Avila, J. U. Kim, <span class="me">Y. J. Lee</span>, H.-S. Shin, M. Zhou, S. W. Jeon, J. M. Baek, Y. Lee, S. Y. Kim, J. Lim, M. Park, H. Jeong, S. M. Won, R. Chen, Y. Huang, Y. H. Jung, J.-Y. Yoo, J. A. Rogers</span>
+        <span class="pub-venue"><em>Proceedings of the National Academy of Sciences (PNAS)</em> 121, e2404007121, 2024</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2024" data-topic="robotics">
+        <!-- <div class="pub-thumb"><img src="images/pubs/liquids-impedance.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1109/ICRA57147.2024.10610518" target="_blank" rel="noopener">Liquids Identification and Manipulation via Digitally Fabricated Impedance Sensors</a>
+        <span class="tag">Oral</span>
+        <span class="pub-authors">J. Zhu*, <span class="me">Y. J. Lee</span>*, Y. Luo*, T. Xu, C. Liu, D. Rus, S. Mueller, W. Matusik</span>
+        <span class="pub-venue"><em>IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 18164–18171, 2024</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2024" data-topic="robotics">
+        <!-- <div class="pub-thumb"><img src="images/pubs/tactile-glove.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1038/s41467-024-45059-8" target="_blank" rel="noopener">Adaptive Tactile Interaction Transfer via Digitally Embroidered Smart Gloves</a>
+        <span class="pub-authors">Y. Luo, C. Liu, <span class="me">Y. J. Lee</span>, J. DelPreto, K. Wu, M. Foshey, D. Rus, T. Palacios, Y. Li, A. Torralba, W. Matusik</span>
+        <span class="pub-venue"><em>Nature Communications</em> 15, 868, 2024</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2023" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/vocal-fatigue.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1073/pnas.2219394120" target="_blank" rel="noopener">Closed-loop network of skin-interfaced wireless devices for quantifying vocal fatigue and providing user feedback</a>
+        <span class="pub-authors">H. Jeong*, J.-Y. Yoo*, W. Ouyang*, A. Greane, A. J. Wiebe, I. Huang, <span class="me">Y. J. Lee</span>, J. Y. Lee, J. Kim, X. Ni, S. Kim, H. Huynh, I. Zhong, Y. X. Chin, J. Gu, A. M. Johnson, T. Brancaccio, J. A. Rogers</span>
+        <span class="pub-venue"><em>Proceedings of the National Academy of Sciences (PNAS)</em> 120, e2219394120, 2023</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2023" data-topic="materials">
+        <!-- <div class="pub-thumb"><img src="images/pubs/thermal-safety.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1038/s41467-023-36690-y" target="_blank" rel="noopener">Responsive materials and mechanisms as thermal safety systems for skin-interfaced electronic devices</a>
+        <span class="pub-authors">S. Yoo*, T. Yang, M. Park, H. Jeong, <span class="me">Y. J. Lee</span>, D. Cho, J. Kim, S. S. Kwak, J. Shin, Y. Park, Y. Wang, N. Miljkovic, W. P. King, J. A. Rogers</span>
+        <span class="pub-venue"><em>Nature Communications</em> 14, 1024, 2023</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2022" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/electrotherapy.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1126/science.abm1703" target="_blank" rel="noopener">A closed-loop network of wireless, body-integrated devices for temporary electrotherapy</a>
+        <span class="pub-authors">Y. S. Choi*, H. Jeong*, R. T. Yin*, R. Avila, A. Pfenniger, J.-Y. Yoo, J. Y. Lee, A. Tzavelis, <span class="me">Y. J. Lee</span>, S. W. Chen, H. S. Knight, S. Kim, H. Ahn, G. Wickerson, A. Vazquez-Guardado, E. Higbee-Dempsey, B. A. Russo, M. A. Napolitano, T. J. Holleran, L. A. Razzak, A. N. Miniovich, G. Lee, B. Geist, B. Kim, S. Han, J. A. Brennan, K. Aras, S. S. Kwak, J. Kim, E. A. Waters, X. Yang, A. Burrell, K. S. Chun, C. Liu, C. Wu, A. Y. Rwei, A. N. Spann, A. Banks, D. Johnson, Z. J. Zhang, C. R. Haney, S. H. Jin, A. V. Sahakian, Y. Huang, G. D. Trachiotis, B. P. Knight, R. K. Arora, I. R. Efimov, J. A. Rogers</span>
+        <span class="pub-venue"><em>Science</em> 376, 1006–1012, 2022</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2022" data-topic="materials">
+        <!-- <div class="pub-thumb"><img src="images/pubs/switchable-adhesive.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1126/sciadv.abo0537" target="_blank" rel="noopener">Thermally Switchable, Crystallizable Oil and Silicone Composite Adhesives for Wearable Devices</a>
+        <span class="pub-authors">K. R. Jinkins*, S. Li*, H. Arafa, H. Jeong, <span class="me">Y. J. Lee</span>, C. Wu, E. Campisi, X. Ni, D. Cho, Y. Huang, J. A. Rogers</span>
+        <span class="pub-venue"><em>Science Advances</em> 8, eabo0537, 2022</span>
+        </div>
+      </li>
+      <li data-group="arxiv" data-year="2021" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/fullbody-kinematics.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <span class="pub-title">Soft, Miniaturized, and Self-adhesive Interface in Wearable Sensor Network for Systematic and Quantified Assessment of Full-Body Kinematics</span>
+        <span class="tag">Oral</span>
+        <span class="pub-authors"><span class="me">Y. J. Lee</span>, H. Jeong, J.-Y. Yoo, J. A. Rogers</span>
+        <span class="pub-venue"><em>MRS Fall Meeting &amp; Exhibit</em> (Abstract), Virtual, 2021</span>
+        </div>
+      </li>
+      <li data-group="selected" data-year="2021" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/infant-sensors.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1073/pnas.2104925118" target="_blank" rel="noopener">Miniaturized wireless, skin-integrated sensor networks for quantifying full-body movement behaviors and vital signs in infants</a>
+        <span class="pub-authors">H. Jeong*, S. S. Kwak*, S. Sohn*, J. Y. Lee, <span class="me">Y. J. Lee</span>, M. K. O'Brien, Y. Park, R. Avila, J.-T. Kim, J.-Y. Yoo, M. Irie, H. Jang, W. Ouyang, N. Shawen, Y. J. Kang, S. S. Kim, A. Tzavelis, K. Lee, R. A. Anderson, Y. Huang, A. Jayaraman, M. M. Davis, T. Shanley, L. S. Wakschlag, S. Krogh-Jespersen, S. Xu, S. W. Ryan, R. L. Lieber, J. A. Rogers</span>
+        <span class="pub-venue"><em>Proceedings of the National Academy of Sciences (PNAS)</em> 118, e2104925118, 2021</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2021" data-topic="wearable">
+        <!-- <div class="pub-thumb"><img src="images/pubs/cardiopulmonary.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1126/sciadv.abg3092" target="_blank" rel="noopener">Differential cardiopulmonary monitoring system for artifact-canceled physiological tracking of athletes, workers, and COVID-19 patients</a>
+        <span class="pub-authors">H. Jeong*, J. Y. Lee*, K. Lee*, Y. J. Kang*, J.-T. Kim*, R. Avila, A. Tzavelis, J. Kim, H. Ryu, S. S. Kwak, J. U. Kim, A. Banks, H. Jang, J.-K. Chang, S. Li, C. K. Mummidisetty, Y. Park, S. Nappi, K. S. Chun, <span class="me">Y. J. Lee</span>, K. Kwon, X. Ni, H. Y. Chung, H. Luan, J.-H. Kim, C. Wu, S. Xu, A. Banks, A. Jayaraman, Y. Huang, J. A. Rogers</span>
+        <span class="pub-venue"><em>Science Advances</em> 7, eabg3092, 2021</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2020" data-topic="materials">
+        <!-- <div class="pub-thumb"><img src="images/pubs/bioresorbable-stimulator.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1038/s41467-020-19660-6" target="_blank" rel="noopener">Stretchable, dynamic covalent polymers for soft, long-lived bioresorbable electronic stimulators designed to facilitate neuromuscular regeneration</a>
+        <span class="pub-authors">Y. S. Choi*, Y.-Y. Hsueh*, J. Koo*, Q. Yang*, R. Avila, Z. Xie, G. Lee, Z. Ning, C. Liu, Y. Xu, <span class="me">Y. J. Lee</span>, W. Zhao, J. Fang, Y. Deng, S. M. Lee, A. Vazquez-Guardado, I. Stepien, Y. Yan, J. W. Song, C. Haney, Y. S. Oh, W. Liu, H.-J. Yoon, A. Banks, M. R. MacEwan, G. A. Ameer, W. Z. Ray, Y. Huang, T. Xie, C. K. Franz, S. Li, J. A. Rogers</span>
+        <span class="pub-venue"><em>Nature Communications</em> 11, 5590, 2020</span>
+        </div>
+      </li>
+      <li data-group="other" data-year="2020" data-topic="materials">
+        <!-- <div class="pub-thumb"><img src="images/pubs/polyanhydrides.png" alt="" loading="lazy" onerror="this.remove()"></div> -->
+        <div class="pub-body">
+        <a class="pub-title" href="https://doi.org/10.1002/adfm.202000941" target="_blank" rel="noopener">Biodegradable Polyanhydrides as Encapsulation Layers for Transient Electronics</a>
+        <span class="pub-authors">Y. S. Choi*, J. Koo*, <span class="me">Y. J. Lee</span>, G. Lee, R. Avila, H. Ying, J. Reeder, L. Hambitzer, K. Im, J. Kim, K.-M. Lee, J. Cheng, Y. Huang, S.-K. Kang, J. A. Rogers</span>
+        <span class="pub-venue"><em>Advanced Functional Materials</em> 30, 2000941, 2020</span>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- EXPERIENCE-START -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <h3>Research Experience</h3>
+    <table class="teach research">
+      <tr><td><strong>Graduate Student Researcher</strong>, Perceptual Engineering Lab, MIT CSAIL<span class="advisor">Advisor: Prof. Jas Brooks</span></td><td class="when">Oct 2026 – Present</td></tr>
+      <tr><td><strong>Graduate Student Researcher</strong>, Laboratory for Translational Engineering, MIT and Harvard<span class="advisor">Advisor: Prof. Giovanni Traverso</span></td><td class="when">Feb 2025 – May 2026</td></tr>
+      <tr><td><strong>Graduate Research Assistant</strong>, Computational Design and Fabrication Group, MIT CSAIL<span class="advisor">Advisor: Prof. Wojciech Matusik</span></td><td class="when">Aug 2022 – Aug 2024</td></tr>
+      <tr><td><strong>Undergraduate Research Assistant</strong>, Rogers Research Group, Northwestern University<span class="advisor">Advisor: Prof. John A. Rogers</span></td><td class="when">May 2019 – Jun 2022</td></tr>
+      <tr><td><strong>Research Intern</strong>, Neural Sensing and Therapy Lab, Korea University<span class="advisor">Advisor: Prof. Jahyun Koo</span></td><td class="when">Jun 2020 – Aug 2020</td></tr>
+    </table>
+
+    <h3>Professional Activities</h3>
+    <div class="entry">
+      <span class="role">Technical Program Committee Member</span>
+    </div>
+    <p class="entry-sub"><em>IEEE BSN 2024</em>, Workshop on Machine Learning-Enhanced Wearable Platforms: Innovations in Biomedical Instrumentation and Mechanics</p>
+
+    <div class="entry">
+      <span class="role">Reviewer</span>
+    </div>
+    <p class="entry-sub"><em>IEEE ICRA 2024</em>, Workshop on Advancing Wearable Devices and Applications through Novel Design, Sensing, Actuation, and AI</p>
+
+    <h3>Teaching Experience</h3>
+    <div class="entry">
+      <span class="role">Teaching Assistant, MIT</span>
+    </div>
+    <table class="teach">
+      <tr><td>Introduction to Computer Vision (UG) — Profs. Bill Freeman &amp; Kaiming He</td><td class="when">Spring 2026</td></tr>
+      <tr><td>Dynamic System Modeling and Control Design (UG/G) — Prof. Jacob White</td><td class="when">Fall 2025</td></tr>
+      <tr><td>Medical Device Design (UG/G) — Prof. Alexander Slocum et al.</td><td class="when">Spring 2025</td></tr>
+      <tr><td>Introduction to Modeling and Simulation (G) — Prof. Luca Daniel</td><td class="when">Fall 2024</td></tr>
+    </table>
+
+    <h3>Mentees</h3>
+    <div class="entry">
+      <span class="role">Undergraduate Research Mentor, Northwestern University</span>
+    </div>
+    <table class="teach">
+      <tr><td><strong>Aaron Huang</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, Georgia Tech</em></td><td class="when">Oct 2021 – Mar 2022</td></tr>
+      <tr><td><strong>Taeyoung Lee</strong>, High school student, New Trier High School → <em>Undergraduate, Northwestern University</em></td><td class="when">Jun 2021 – Aug 2021</td></tr>
+      <tr><td><strong>Su Kim</strong>, Undergraduate, Northwestern University</td><td class="when">Apr 2021 – May 2022</td></tr>
+      <tr><td><strong>Aurora Greene</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, University of Melbourne</em></td><td class="when">Mar 2021 – Sep 2021</td></tr>
+      <tr><td><strong>Leen Abdul Razzak</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, Stanford University</em></td><td class="when">Feb 2020 – May 2020</td></tr>
+      <tr><td><strong>Jaemin Yoo</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, UC Berkeley</em></td><td class="when">Nov 2019 – Mar 2020</td></tr>
+    </table>
+  </section>
+  <!-- EXPERIENCE-END -->
+
+</main>
+
+<footer>© 2026 Young Lee · Last updated October 2026</footer>
+
+<script>
+  /* Light / dark toggle */
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme-toggle");
+    function current() {
+      var t = root.getAttribute("data-theme");
+      if (t) return t;
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    function label() { btn.textContent = current() === "dark" ? "Light" : "Dark"; }
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      label();
+    });
+    label();
+  })();
+</script>
+
+<script>
+  /* Publications: group tabs + sort by date / topic */
+  (function () {
+    var data = document.getElementById("pub-data"), view = document.getElementById("pub-view");
+    if (!data || !view) return;
+    var items = Array.prototype.slice.call(data.children);
+    var topics = [
+      ["robotics", "Robotic Perception, Tactile Sensing & Haptics"],
+      ["wearable", "Wearable Sensor Networks for Continuous Monitoring"],
+      ["materials", "Materials for Bio-Integrated Electronics"]
+    ];
+    var state = { group: "selected", sort: "date" };
+    data.hidden = true;
+
+    function block(title, list) {
+      if (!list.length) return;
+      var h = document.createElement("h4"); h.className = "pub-heading"; h.textContent = title; view.appendChild(h);
+      var ol = document.createElement("ol"); ol.className = "pubs";
+      list.forEach(function (li) { ol.appendChild(li.cloneNode(true)); });
+      view.appendChild(ol);
+    }
+    function render() {
+      view.innerHTML = "";
+      var list = items.filter(function (li) { return state.group === "all" || li.dataset.group === state.group; });
+      if (state.sort === "date") {
+        var years = [];
+        list.forEach(function (li) { if (years.indexOf(li.dataset.year) < 0) years.push(li.dataset.year); });
+        years.forEach(function (y) { block(y, list.filter(function (li) { return li.dataset.year === y; })); });
+      } else {
+        topics.forEach(function (t) { block(t[1], list.filter(function (li) { return li.dataset.topic === t[0]; })); });
+      }
+      document.querySelectorAll(".pub-tabs button").forEach(function (b) {
+        var on = b.dataset.group === state.group;
+        b.classList.toggle("active", on); b.setAttribute("aria-selected", on);
+      });
+      document.querySelectorAll(".pub-sort button").forEach(function (b) {
+        b.classList.toggle("active", b.dataset.sort === state.sort);
+      });
+    }
+    document.querySelectorAll(".pub-tabs button").forEach(function (b) {
+      b.addEventListener("click", function () { state.group = b.dataset.group; render(); });
+    });
+    document.querySelectorAll(".pub-sort button").forEach(function (b) {
+      b.addEventListener("click", function () { state.sort = b.dataset.sort; render(); });
+    });
+    render();
+  })();
+</script>
+
+<a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑ Top</a>
+<script>
+  /* Back-to-top button: appears after scrolling down */
+  (function () {
+    var btn = document.getElementById("to-top");
+    function update() { btn.classList.toggle("show", window.scrollY > 400); }
+    window.addEventListener("scroll", update, { passive: true });
+    btn.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    update();
+  })();
+</script>
+
+</body>
+</html>

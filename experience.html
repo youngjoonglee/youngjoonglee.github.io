@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience | Young Lee</title>
+  <meta name="description" content="Young Lee (Young Joong Lee) — Ph.D. student in EECS and CSAIL at MIT, Perceptual Engineering Lab.">
+  <script>
+    /* Apply the saved light/dark choice before the page paints */
+    (function () { try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {} })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a class="brand" href="index.html">Young Lee</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#news">News</a></li>
+        <li><a href="index.html#pub">Publications</a></li>
+        <li><a class="active" href="experience.html">Experience</a></li>
+      </ul>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark mode">Dark</button>
+  </div>
+</nav>
+
+<main>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <h3>Research Experience</h3>
+    <table class="teach research">
+      <tr><td><strong>Graduate Student Researcher</strong>, Perceptual Engineering Lab, MIT CSAIL<span class="advisor">Advisor: Prof. Jas Brooks</span></td><td class="when">Oct 2026 – Present</td></tr>
+      <tr><td><strong>Graduate Student Researcher</strong>, Laboratory for Translational Engineering, MIT and Harvard<span class="advisor">Advisor: Prof. Giovanni Traverso</span></td><td class="when">Feb 2025 – May 2026</td></tr>
+      <tr><td><strong>Graduate Research Assistant</strong>, Computational Design and Fabrication Group, MIT CSAIL<span class="advisor">Advisor: Prof. Wojciech Matusik</span></td><td class="when">Aug 2022 – Aug 2024</td></tr>
+      <tr><td><strong>Undergraduate Research Assistant</strong>, Rogers Research Group, Northwestern University<span class="advisor">Advisor: Prof. John A. Rogers</span></td><td class="when">May 2019 – Jun 2022</td></tr>
+      <tr><td><strong>Research Intern</strong>, Neural Sensing and Therapy Lab, Korea University<span class="advisor">Advisor: Prof. Jahyun Koo</span></td><td class="when">Jun 2020 – Aug 2020</td></tr>
+    </table>
+
+    <h3>Professional Activities</h3>
+    <div class="entry">
+      <span class="role">Technical Program Committee Member</span>
+    </div>
+    <p class="entry-sub"><em>IEEE BSN 2024</em>, Workshop on Machine Learning-Enhanced Wearable Platforms: Innovations in Biomedical Instrumentation and Mechanics</p>
+
+    <div class="entry">
+      <span class="role">Reviewer</span>
+    </div>
+    <p class="entry-sub"><em>IEEE ICRA 2024</em>, Workshop on Advancing Wearable Devices and Applications through Novel Design, Sensing, Actuation, and AI</p>
+
+    <h3>Teaching Experience</h3>
+    <div class="entry">
+      <span class="role">Teaching Assistant, MIT</span>
+    </div>
+    <table class="teach">
+      <tr><td>Introduction to Computer Vision (UG) — Profs. Bill Freeman &amp; Kaiming He</td><td class="when">Spring 2026</td></tr>
+      <tr><td>Dynamic System Modeling and Control Design (UG/G) — Prof. Jacob White</td><td class="when">Fall 2025</td></tr>
+      <tr><td>Medical Device Design (UG/G) — Prof. Alexander Slocum et al.</td><td class="when">Spring 2025</td></tr>
+      <tr><td>Introduction to Modeling and Simulation (G) — Prof. Luca Daniel</td><td class="when">Fall 2024</td></tr>
+    </table>
+
+    <h3>Mentees</h3>
+    <div class="entry">
+      <span class="role">Undergraduate Research Mentor, Northwestern University</span>
+    </div>
+    <table class="teach">
+      <tr><td><strong>Aaron Huang</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, Georgia Tech</em></td><td class="when">Oct 2021 – Mar 2022</td></tr>
+      <tr><td><strong>Taeyoung Lee</strong>, High school student, New Trier High School → <em>Undergraduate, Northwestern University</em></td><td class="when">Jun 2021 – Aug 2021</td></tr>
+      <tr><td><strong>Su Kim</strong>, Undergraduate, Northwestern University</td><td class="when">Apr 2021 – May 2022</td></tr>
+      <tr><td><strong>Aurora Greene</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, University of Melbourne</em></td><td class="when">Mar 2021 – Sep 2021</td></tr>
+      <tr><td><strong>Leen Abdul Razzak</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, Stanford University</em></td><td class="when">Feb 2020 – May 2020</td></tr>
+      <tr><td><strong>Jaemin Yoo</strong>, Undergraduate, Northwestern University → <em>Ph.D. student, UC Berkeley</em></td><td class="when">Nov 2019 – Mar 2020</td></tr>
+    </table>
+  </section>
+  
+</main>
+
+<footer>© 2026 Young Lee · Last updated October 2026</footer>
+
+<script>
+  /* Light / dark toggle */
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme-toggle");
+    function current() {
+      var t = root.getAttribute("data-theme");
+      if (t) return t;
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    function label() { btn.textContent = current() === "dark" ? "Light" : "Dark"; }
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      label();
+    });
+    label();
+  })();
+</script>
+
+<a href="#top" class="to-top" id="to-top" aria-label="Back to top">↑ Top</a>
+<script>
+  /* Back-to-top button: appears after scrolling down */
+  (function () {
+    var btn = document.getElementById("to-top");
+    function update() { btn.classList.toggle("show", window.scrollY > 400); }
+    window.addEventListener("scroll", update, { passive: true });
+    btn.addEventListener("click", function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    update();
+  })();
+</script>
+
+</body>
+</html>
